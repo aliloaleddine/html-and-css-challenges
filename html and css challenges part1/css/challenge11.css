@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 20px 0;
+}
+
+.sport {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.sport .imag {
+    width: 450px;
+    position: relative;
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.sport .imag::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 50px);
+    height: 100%;
+    border: 10px solid #f88992;
+    z-index: -1;
+}
+
+.sport .text {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.sport .text p {
+    color: #777;
+}
+
+.sport .text span {
+    position: relative;
+    color: #f2344b;
+    font-weight: bold;
+    padding-left: 50px;
+    margin: 20px 0;
+    display: block;
+}
+
+.sport .text span::before {
+    content: " ";
+    position: absolute;
+    border: 1px solid;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.sport .text span::after {
+    content: " ";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: #f2344b;
+}
+
+.sport .text .icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sport .text .icons .box {
+    width: 150px;
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.sport .text .icons .box::before {
+    content: " ";
+    position: absolute;
+    right: -18px;
+    top: -18px;
+    border: 20px solid;
+    border-color: transparent transparent #f2344b;
+    transform-origin: center center;
+    transform: rotate(45deg);
+}
+
+
+.sport .text .icons .box img {
+    width: 100%;
+}
+
+.sport .text .icons .box h4 {
+    margin-top: 5px;
+}

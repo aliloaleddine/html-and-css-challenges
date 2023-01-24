@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-left: 20px;
+}
+
+h3 {
+    padding: 20px 0;
+}
+
+/* str  color*/
+ul li {
+    position: relative;
+    border-bottom: 1px solid red;
+    list-style: none;
+    padding: 10px 0;
+    color: red;
+    width: fit-content;
+}
+
+ul li:first-child {
+    color: royalblue;
+}
+
+ul li::before {
+    background-color: red;
+}
+
+ul li:first-child::before {
+    background-color: royalblue;
+    border-color: transparent transparent royalblue transparent;
+}
+
+ul li:nth-child(3) {
+    color: green;
+}
+
+ul li:nth-child(3)::before {
+    background-color: green;
+    border-color: transparent transparent green transparent;
+}
+
+/* end  color*/
+
+/* star location */
+ul li::before {
+    content: " ";
+    position: absolute;
+    bottom: -6px;
+    width: 10px;
+    height: 10px;
+}
+
+ul li::after {
+    content: " ";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 300px;
+    height: 1px;
+    background-color: #ececec;
+    z-index: -1;
+}
+
+
+.Triangle-Up li::before {
+    bottom: -1px;
+}
+
+
+.Triangle-Down li::before {
+    top: 100%;
+}
+
+/* end location*/
+
+/* str form */
+.Circls li::before {
+    border-radius: 50%;
+}
+
+.Triangle-Up li::before,
+.Triangle-Down li::before {
+    width: 0;
+    height: 0;
+    border: 8px solid;
+    border-color: transparent transparent red transparent;
+    background-color: transparent;
+}
+
+.Triangle-Up li:first-child:before,
+.Triangle-Down li:first-child:before {
+    background-color: transparent;
+}
+
+.Triangle-Up li:nth-child(3)::before,
+.Triangle-Down li:nth-child(3)::before {
+    background-color: transparent;
+}
+
+.Triangle-Down li::before {
+    border-color: red transparent transparent transparent;
+}
+
+.Triangle-Down li:first-child:before {
+    border-color: royalblue transparent transparent transparent;
+}
+
+.Triangle-Down li:nth-child(3)::before {
+    border-color: green transparent transparent transparent;
+}
+
+/* end form */

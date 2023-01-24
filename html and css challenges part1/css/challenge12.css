@@ -1,0 +1,126 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Course {
+    background: #51509b;
+    padding: 50px;
+    position: relative;
+}
+
+.Course h1 {
+    color: white;
+    display: inline;
+}
+
+.Course img {
+    vertical-align: middle;
+    height: 55px;
+}
+
+.Course p {
+    color: white;
+}
+
+.Course .Offers {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.Course .Offers .box {
+    background: white;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.Course .Offers .box i {
+    color: #e5af40;
+}
+
+.Course .Offers .box:first-child {
+    width: 450px;
+}
+
+.Course .Offers .box:last-child {
+    box-shadow: 13px 0px 10px 0px #00000078 inset;
+
+}
+
+.Course .Offers .box .fa-check::before {
+    content: "\f00c";
+    font-weight: 900;
+    font-family: "font awesome 5 free";
+    margin-right: 5px;
+
+}
+
+.Course .Offers .box h2 {
+    display: initial;
+    position: relative;
+    z-index: 1;
+}
+
+.Course .Offers .box h2::after {
+    content: " ";
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    background-color: #ffeabe;
+    left: 0;
+    height: 5px;
+    z-index: -1;
+}
+
+.Course .Offers .box ul {
+    margin: 25px 0;
+
+}
+
+.Course .Offers .box ul li {
+    border-bottom: 1px solid #d5d5d5;
+    padding: 10px 0;
+
+}
+
+.Course .Offers .box span {
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+
+.Course .Offers .box span::before {
+    content: "$";
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+}
+
+.Course .Offers .box span::after {
+    content: "USD";
+    position: absolute;
+    font-size: 10px;
+    bottom: 0;
+    right: 0;
+
+}
+
+.Course .Offers .box .price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Course .Offers .box a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #e5af40;
+    text-decoration: none;
+    color: white;
+}

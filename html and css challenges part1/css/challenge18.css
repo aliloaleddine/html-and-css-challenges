@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    position: relative;
+    background-color: #eeeeee;
+}
+
+.box .header {
+    background-image: url(../img/gtx\ 750\ ti.jpg);
+    background-size: cover;
+    position: relative;
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.box .header img {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: -20px;
+    z-index: 2;
+    border: 2px solid #009688;
+}
+
+.box .main {
+    background-color: white;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.box .main h2 {
+    margin: 5px 0;
+}
+
+.box .main .name {
+    color: #acacac;
+}
+
+.box .main .name span {
+    color: #57bab1;
+}
+
+.box .main .name span i::before {
+    content: "\f02b";
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    color: #acacac;
+    font-size: 13px;
+}
+
+.box .main p {
+    padding: 10px 0;
+}
+
+.box .main .info>span,
+.box .main .info ul li span:last-child {
+    color: #acacac;
+}
+
+.box .main .info span i::before {
+    content: "\f3c5";
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    color: #009688;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.box .info .Progress {
+    width: 100%;
+    background-color: #eeeeee;
+    height: 20px;
+    display: block;
+    margin: 20px 0;
+    position: relative;
+}
+
+.box .info .Progress::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #009688;
+    height: 100%;
+    width: 65%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.box .info ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .info ul li span:first-child {
+    display: block;
+    font-weight: bold;
+}

@@ -1,0 +1,151 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+.haeder {
+    height: 300px;
+    background-image: url(../img/spaceship.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.haeder::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #c34a29a1;
+    z-index: 1;
+}
+
+.responsive {
+    background-color: #122333;
+    color: white;
+    position: absolute;
+    padding: 50px;
+    z-index: 1;
+    top: 50%;
+
+}
+
+.responsive h1 {
+    margin-bottom: 20px;
+
+}
+
+.responsive ul li {
+    margin: 10px 0;
+}
+
+.responsive ul li::before {
+    content: "\f00c";
+    font-weight: 900;
+    font-family: "font awesome 5 free";
+    margin-right: 5px;
+    color: #5a833a;
+}
+
+.link {
+    background-color: #ed4c21;
+    color: white;
+    padding: 10px;
+    display: block;
+    width: fit-content;
+}
+
+.soso {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.soso span {
+    border: 1px solid #ed4c21;
+    width: 500px;
+    margin: 40px;
+    padding: 20px;
+}
+
+body>ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+body>ul li {
+    background-color: #f2f8fa;
+    padding: 20px;
+
+}
+
+body>ul li span {
+    color: #ed4c21;
+
+}
+
+body>ul li P {
+    color: #777;
+}
+
+body>ul li a {
+    color: #ed4c21;
+}
+
+footer {
+    background-image: url(../img/jellyfish.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 50px;
+}
+
+footer::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgb(24 40 52 / 90%);
+}
+
+footer .col {
+    position: relative;
+    z-index: 1;
+}
+
+footer .col h2 {
+    padding-bottom: 15px;
+    position: relative;
+}
+
+footer .col h2::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    left: 0;
+    height: 2px;
+    background-color: #ed4c21;
+}
+
+footer .col p {
+    margin: 30px 0;
+}
+
+footer .col a {
+    background-color: #ed4c21;
+    color: white;
+}

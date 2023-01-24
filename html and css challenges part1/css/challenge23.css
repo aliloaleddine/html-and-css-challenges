@@ -1,0 +1,98 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+img {
+    width: 100px;
+    height: 120px;
+}
+
+.header {
+    position: relative;
+}
+
+.header::before {
+    content: " ";
+    position: absolute;
+    background-color: #ffab91;
+    width: 50px;
+    height: 38px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header .contener {
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .contener span {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+}
+
+.header .contener div {
+    display: flex;
+}
+
+.header .contener div::before {
+    content: "VIEW ALL";
+    padding: 10PX;
+    color: #a7a9aa;
+    background-color: #eeeeee;
+}
+
+.header .contener a {
+    padding: 10PX;
+    color: black;
+    background-color: #ff5722;
+    font-size: 12px;
+}
+
+.contener {
+    padding: 0 50px;
+}
+
+.contener .box {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    align-items: center;
+    color: #a7a9aa;
+}
+
+h3 {
+    color: black;
+}
+
+.box>h3 {
+    color: black;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.box>h3::before {
+    content: "14";
+    display: block;
+}
+
+.contener .box div {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.contener .box div ul {
+    display: flex;
+    margin-top: 5px;
+}
+
+.contener .box div ul li {
+    margin-right: 20px;
+}

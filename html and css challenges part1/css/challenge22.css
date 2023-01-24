@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #e8f4fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.Ribbon {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Ribbon .box {
+    background-color: #242424;
+    text-align: center;
+    position: relative;
+    width: calc(100% / 4);
+    padding: 20px 0;
+    color: white;
+    height: 415px;
+}
+
+.Ribbon .box h1 {
+    margin-bottom: 10px;
+}
+
+.Ribbon .box span {
+    position: relative;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.Ribbon .box span::before {
+    content: "$";
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 30px);
+}
+
+.Ribbon .box span::after {
+    content: "/mo";
+    position: absolute;
+    bottom: -5px;
+}
+
+.Ribbon .box:nth-child(3) {
+    height: 445px;
+    background-color: #03a9f4;
+    padding-top: 50px;
+}
+
+.Ribbon .box a {
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid white
+}
+
+.Ribbon .box ul {
+    margin: 30px 0;
+    margin-bottom: 40px;
+}
+
+.Ribbon .box ul li {
+    border: 1px solid #393939;
+    border-left: none;
+    border-right: none;
+    padding: 10px 0;
+}
+
+.Ribbon .box:nth-child(3) ul li {
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+}
+
+.Ribbon .box:not(:nth-child(3)) ul li {
+    color: #566471;
+}
+
+.Ribbon .box:not(:nth-child(3)) ul li:nth-child(2),
+.Ribbon .box:not(:nth-child(3)) ul li:nth-child(4) {
+    background-color: #2a2a2a;
+}

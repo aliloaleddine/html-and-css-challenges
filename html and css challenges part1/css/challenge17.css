@@ -1,0 +1,305 @@
+/* star varabels */
+
+:root {
+    --main-color: #0d40c6;
+    --main-back: #eef2fe;
+}
+
+/* end varabels */
+
+/* star global rules */
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+
+
+body {
+    padding: 10px 0;
+}
+
+.Bi-Da {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+
+.Bi-Da .main {
+    padding: 0 50px;
+}
+
+/* end global rules */
+
+/*star nav */
+.Bi-Da .nav {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.Bi-Da .nav ul li span::before {
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    color: var(--main-back);
+}
+
+.Bi-Da .nav li span {
+    padding: 25px 0;
+    display: block;
+}
+
+.Bi-Da .nav ul li .home::before {
+    content: '\f7ae';
+}
+
+.Bi-Da .nav ul li .default::before {
+    content: '\f021';
+}
+
+.Bi-Da .nav ul li .account::before {
+
+    content: '\f007';
+}
+
+.Bi-Da .nav ul li .settings::before {
+    content: '\f7d9';
+}
+
+/*end nav */
+
+
+/*star header */
+.Bi-Da .main>.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-back);
+}
+
+
+
+.Bi-Da .main .header .logo img {
+    width: 60px;
+}
+
+.Bi-Da .main .header .mneu {
+    display: flex;
+    align-items: center;
+}
+
+.Bi-Da .main .header .mneu .amount {
+    position: relative;
+    width: 180px;
+    height: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid var(--main-back);
+    color: var(--main-color);
+}
+
+.Bi-Da .main .header div .amount::before {
+    position: absolute;
+    content: "0.00025 ₿";
+    left: 0;
+    top: 0;
+    width: calc(50% - 10px);
+    background: var(--main-back);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    padding: 0 5px;
+}
+
+.Bi-Da .main .header div .amount::after {
+    position: absolute;
+    content: "230.15 USD";
+    right: 0;
+    top: 0;
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.Bi-Da .main .header div .account {
+    width: 30px;
+    position: relative;
+    background: var(--main-color);
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.Bi-Da .main .header .account::before {
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    color: var(--main-back);
+    content: '\f007';
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%)
+}
+
+.Bi-Da .main .header .mneu p {
+    color: var(--main-color);
+    position: relative;
+    width: 110px;
+}
+
+.Bi-Da .main .header .mneu p::after {
+    content: " ";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: 0;
+    top: 20%;
+    border: 1px solid black;
+    border-color: transparent black black transparent;
+    rotate: 45deg;
+}
+
+/*end header */
+
+/*str section */
+
+.section p {
+    margin: 20px 0;
+}
+
+.section p span:first-child {
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.section .content {
+    margin: 20px 0;
+}
+
+.section .content .header .buttons a:first-child {
+    background: var(--main-color);
+    text-decoration: none;
+    color: var(--main-back);
+    padding: 8px 80px;
+    margin: 0 20px;
+    border: 1px solid var(--main-back);
+}
+
+.section .content .header .buttons a:last-child {
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 8px 80px;
+    margin: 0 20px;
+    border: 1px solid var(--main-back);
+}
+
+
+.section .content .header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section .content .header .info {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .content .header .info img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.section .content .header .info .s-b {
+    display: flex;
+    align-items: flex-start;
+}
+
+.section .panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.section .panel .col:first-child {
+    width: 30%;
+}
+
+.section .panel .col:last-child {
+    width: 60%;
+}
+
+.section .panel .col div:not(:last-of-type) {
+    background: var(--main-back);
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.section .panel .col div select {
+    flex-basis: 50%;
+    background: no-repeat;
+    border: none;
+    outline: none;
+}
+
+.section .panel .col div input {
+    flex-basis: 50%;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.section .panel .col a {
+    background: #10d876;
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+}
+
+
+.section .panel .col div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .panel .col div:last-of-type span:first-child {
+    color: #a5b4ca;
+}
+
+.section .panel .col:last-child div {
+    background: var(--main-back);
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.section .panel .col:last-child div:nth-child(1) span,
+.section .panel .col:last-child div:nth-child(1) input {
+    color: var(--main-color);
+}
+
+.section .panel .col:last-child div:nth-child(6) input {
+    color: red;
+}
+
+.section .panel .col p {
+    color: #a5b4ca;
+}
+
+/*end header */

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #e8f4fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Ribbon {
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+}
+
+.Ribbon .box {
+    background-color: white;
+    text-align: center;
+    position: relative;
+    width: calc((100% - 50px) / 3);
+    padding: 20px 0;
+}
+
+.Ribbon .box h1 {
+    position: relative;
+}
+
+.Ribbon .box h1::before {
+    content: "$";
+    position: absolute;
+    top: 0;
+    left: 36%;
+    font-size: 25px;
+}
+
+.Ribbon .box:first-child {
+    margin-top: 10px;
+}
+
+.Ribbon .box:nth-child(2) {
+    margin-top: 20px;
+}
+
+.Ribbon .box:nth-child(3) {
+    margin-top: 30px;
+}
+
+.Ribbon .box::before {
+    position: absolute;
+    color: white;
+    left: -10px;
+    top: 70px;
+    padding: 10px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Ribbon .box::after {
+    content: " ";
+    position: absolute;
+    left: -20px;
+    top: 60px;
+    border: 10px solid;
+    z-index: -1;
+}
+
+.Ribbon .box:first-child::after {
+    border-color: transparent #47bca8 transparent transparent;
+}
+
+.Ribbon .box:nth-child(2)::after {
+    border-color: transparent #be9b25 transparent transparent;
+}
+
+.Ribbon .box:nth-child(3)::after {
+    border-color: transparent #4552a5 transparent transparent;
+}
+
+.Ribbon .box a {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.Ribbon .box:first-child a {
+    background-color: #13c8a6;
+}
+
+.Ribbon .box:first-child::before {
+    content: "Basic";
+    background-color: #13c8a6;
+}
+
+.Ribbon .box:nth-child(2) a {
+    background-color: #efcb53;
+}
+
+.Ribbon .box:nth-child(2)::before {
+    content: "Standard";
+    background-color: #efcb53;
+}
+
+.Ribbon .box:nth-child(3) a {
+    background-color: #555fae;
+}
+
+.Ribbon .box:nth-child(3)::before {
+    content: "Premium";
+    background-color: #555fae;
+}
+
+.Ribbon .box ul {
+    margin: 80px 0;
+    margin-bottom: 40px;
+}
+
+.Ribbon .box ul li {
+    margin-bottom: 20px;
+}
